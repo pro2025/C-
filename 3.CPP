@@ -1,3 +1,4 @@
+
 #include<iostream.h>
 #include<conio.h>
 class rectangle
@@ -18,6 +19,10 @@ cout<<"\nArea of rectangle:";
 l=a;
 w=b;
 }
+~rectangle()
+{
+cout<<"Destructor\n";
+}
 int area()
 {
 return (l*w);
@@ -25,7 +30,6 @@ return (l*w);
 };
 void main()
 {
-clrscr();
 rectangle t;
 rectangle i(5,4);
 cout<<t.area()<<endl;
