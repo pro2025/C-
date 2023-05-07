@@ -1,23 +1,21 @@
 //c++ demostration
 #include<iostream.h>
 #include<conio.h>
-class Base
+class A
 {
 public:
-int a;
+int x;
+protected:
+int y;
+private:
+int z;
 };
-class child:public Base
+class B:public A
 {
-public:
-int b;
+//x is public
+//y is protected
+//z is not accessible from B
 };
-//main function
-void main()
-{
-child c1;
-c1.a=5;
-c1.b=3;
-cout<<"Child is:"<<c1.a<<endl;
-cout<<"Parent is:"<<c1.b<<endl;
+class C:
 getch();
 }
